@@ -1,0 +1,425 @@
+body{
+    margin: 0;
+    background-color: #0D0D0D;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+header{
+    width: 100%;
+    background-color: #0D0D0D;
+}
+.fa-solid {
+    color: rgb(255, 255, 255);  /*icono*/
+    font-size: 30px;
+}
+#btn-menu{
+    display: none;
+ 
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;    
+    padding: 10px;  
+    border-right: 1px solid #fff;
+}
+
+header label:hover{     /*Evento*/
+    cursor: pointer;
+    background-color: rgba(13,13,13,0.3);
+}
+.menu{
+   
+    font-family: "Quicksand", sans-serif;
+}
+.fa-user{
+    font-size: 20px;
+    padding: 15px 20px;
+
+}
+
+.fa-heart{
+    font-size: 20px;
+    padding: 15px 20px;
+}
+
+.fa-cart-shopping{
+    font-size: 20px;
+    padding: 15px 20px;
+}
+.fa-magnifying-glass{
+    font-size: 20px;
+    padding: 15px 20px;
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.menu li{
+   border-right: 1px solid #fff;
+}
+
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color:#fff;
+    text-decoration: none;
+}
+
+@media (max-width:768px) {
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background-color: #0D0D0D;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+
+    
+}
+
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+
+.container {
+    max-width: 1920px;
+    height: 600px;
+    margin: 0 auto; /* Centra el contenedor */
+  }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .logoimg{
+        width: 100%;
+    }
+    
+    .container {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  
+.categoria{
+    display: flex;
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+
+.imagenes{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    margin-top: 30px;
+    color: #fff;
+    margin-bottom: 100px;
+} 
+
+
+@media (max-width: 600px){        /*Media query de las imagenes*/  
+
+
+    .imagenes{
+        flex-direction: column;
+        align-items: center ;
+        margin: 0 14px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        gap: 50px;     
+        }
+
+    }
+
+  .fa-arrow-right{
+    font-size: 12px;
+  }
+
+
+
+/*ABOUT US*/
+
+
+.AboutUs{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+   
+}
+.parrafo{
+    text-align: justify;
+    width: 500px;
+    margin-bottom: 60px;
+    font-size: 20px;
+}
+
+
+@media (max-width: 600px){        /*Media query de las imagenes*/  
+
+
+    .parrafo{
+        width: 75%;
+        margin-bottom: 60px;
+        padding: 50px;
+        }
+
+    }
+    .img5{
+        width: 80%;
+    }
+
+
+
+
+
+/*SLIDER*/
+.slider{
+    width: 75vw;
+    height: auto;
+    margin: auto;;
+    overflow: hidden;
+    background-color: #fff;
+  
+}
+
+.slider .slide-track{
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200*14);
+}   
+
+.slider .slide{
+    width: 400px;
+
+
+}
+
+.sldier .slide img{
+    width: 100%;
+}
+
+@keyframes scroll{
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+
+footer{
+    padding-top: 0%;
+  padding-bottom: 40px;
+  margin-top: 50px;
+}
+.pie{
+    background-color:  #0D0D0D;
+    padding-top: 0%;
+}
+
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;      /* para darle un espaciado entre la imagen y el texto LOOKAT*/ 
+
+}
+
+
+
+.fb{
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+    
+}
+
+.tw{
+    
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+    
+   
+}
+
+.in{
+
+    background:#ffffff;
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+
+.li{
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+
+.yt{
+    background:  #ffffff     ;
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+
+}
+
+
+
+.header2{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.logotipo{
+    font-size: 20px;
+}
+
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;  /*para darle un espaciado */
+    color: rgb(255, 255, 255);
+    /*font-family: "Playfair Display", serif;*/
+       
+    font-family: "Quicksand", sans-serif;
+    margin-top: 50px;
+
+}   
+
+.section div{
+display: flex;
+flex-direction: column;
+}
+
+
+div h2{
+color: rgb(255, 255, 255);  
+padding: 10px 0;
+}
+
+
+form{
+gap: 10px;
+}
+
+.suscribir{
+gap: 10px;
+}
+    
+
+input{
+background: none;
+border: solid 2px white ;
+padding: 10px 20px;
+border-radius:7px;
+}
+
+button{
+padding: 10px 20px;
+background:none;
+color: #ffffff;
+border-color: #ffffff;
+font-size: 18px;
+border-radius:7px;
+}
+
+
+.texto{
+text-justify: auto ;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+
+
+}   
+
+.text-align-justify{
+text-align:justify;
+}
+
+
+@media (max-width: 900px){
+  
+    .slid{                                    /*media query del header: LOGOS DE REDES SOCIALES*/
+        max-width: 800px;
+        max-height: 800px
+     }
+ }
+
+
+
+/*MEDIA QUERY FOOTER*/
+@media (max-width: 800px){
+    .header{                                    /*media query del header: LOGOS DE REDES SOCIALES*/
+    flex-direction: column;
+        }
+    }
+
+
+@media (max-width: 800px){                  /*Media query del section: SERVICIOS   CONTACTOS   SUSCRIBIR*/
+    .section{
+    flex-direction: column;                    
+    margin: 15px;
+    }
+}
+
+
